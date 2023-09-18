@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+
+    <title>Weather Forecast</title>
+    <script src="getAPIData.js" async></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <form id="CityForm">
+        <input id="chosenCity" class="searchbar" type="text" title="Search" placeholder="Search a city..." autocomplete="off" onkeyup="get_user_city_input(); forecastAPI()">
+      </form>
+      <div id="cityName" class="text-color">--</div>
+      <div class="wrapper-1">
+        <img src="placeholder-img.jpg" id="icon" alt="weather icon goes here">
+        <div id="currentTemperature" class="text-color">˚C</div>
+      </div>
+      <div id="description" class="text-color">--</div>
+      <div id="tempHighandLow" class="text-color">--</div>
+      <div class="forecast-row">
+        <div class="plus3" id="plus3">
+          <div class="date-forecast-3" id="date-forecast-3">----</div> 
+          <img class="icon-forecast-3" id="icon-forecast-3" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-3">
+            <div class="temp-forecast-3" id="temp-forecast-3">--˚C</div>
+            <div class="description-forecast-3" id="description-forecast-3">---------</div> 
+          </div>
+        </div>
+        <div class="plus6" id="plus6">
+          <div class="date-forecast-6" id="date-forecast-6">----</div> 
+          <img class="icon-forecast-6" id="icon-forecast-6" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-6">
+            <div class="temp-forecast-6" id="temp-forecast-6">--˚C</div>
+            <div class="description-forecast-6" id="description-forecast-6">---------</div> 
+          </div>
+        </div>
+        <div class="plus9" id="plus9">
+          <div class="date-forecast-9" id="date-forecast-9">----</div> 
+          <img class="icon-forecast-9" id="icon-forecast-9" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-9">
+            <div class="temp-forecast-9" id="temp-forecast-9">--˚C</div>
+            <div class="description-forecast-9" id="description-forecast-9">---------</div> 
+          </div>
+        </div>
+        <div class="plus12" id="plus12">
+          <div class="date-forecast-12" id="date-forecast-12">----</div> 
+          <img class="icon-forecast-12" id="icon-forecast-12" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-12">
+            <div class="temp-forecast-12" id="temp-forecast-12">--˚C</div>
+            <div class="description-forecast-12" id="description-forecast-12">---------</div> 
+          </div>
+        </div>
+        <div class="plus15" id="plus15">
+          <div class="date-forecast-15" id="date-forecast-15">----</div> 
+          <img class="icon-forecast-15" id="icon-forecast-15" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-15">
+            <div class="temp-forecast-15" id="temp-forecast-15">--˚C</div>
+            <div class="description-forecast-6" id="description-forecast-15">---------</div> 
+          </div>
+        </div>
+        <div class="plus18" id="plus18">
+          <div class="date-forecast-18" id="date-forecast-18">----</div> 
+          <img class="icon-forecast-18" id="icon-forecast-18" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-18">
+            <div class="temp-forecast-18" id="temp-forecast-18">--˚C</div>
+            <div class="description-forecast-18" id="description-forecast-18">---------</div> 
+          </div>
+        </div>
+        <div class="plus21" id="plus21">
+          <div class="date-forecast-21" id="date-forecast-21">----</div> 
+          <img class="icon-forecast-21" id="icon-forecast-21" src="icon-image" alt="icon-image" style="display: none" onload="this.style.display=''" width="190" height="190">
+          <div class="description-container-21">
+            <div class="temp-forecast-21" id="temp-forecast-21">--˚C</div>
+            <div class="description-forecast-21" id="description-forecast-21">---------</div> 
+          </div>
+        </div>
+      </div>  
+  </body>
+</html>
